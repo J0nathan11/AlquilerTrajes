@@ -1,0 +1,40 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Cliente.master.cs" Inherits="AlquilerTrajes.Cliente" %>
+
+<!DOCTYPE html>
+<html lang="es">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %> - Alquiler de Trajes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Content/cliente/cliente.css" />
+</head>
+<body>
+    <form runat="server">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+            <div class="container">
+                <a class="navbar-brand" href="~/Default.aspx">
+                    <img src="Content/cliente/logo.png" width="30" height="30" class="d-inline-block align-top me-2" />
+                    Alquiler de Trajes
+                </a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="~/Default.aspx">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="~/Catalogo.aspx">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="~/Contact.aspx">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container my-4">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+
+        <footer class="bg-dark text-white text-center py-3">
+            <p>&copy; <%: DateTime.Now.Year %> - Alquiler de Trajes</p>
+        </footer>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
