@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Agregar Cliente" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AgregarCliente.aspx.cs" Inherits="AlquilerTrajes.Admin.AgregarCliente" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h2 class="text-center text-primary">Agregar Nuevo Cliente</h2>
+    <h2 class="text-center text-primary">Agregar Nuevo Cliente </h2>
     <br />
     <div class="row justify-content-center">
         <div class="col-md-6">
@@ -9,20 +9,20 @@
             <asp:Panel runat="server" CssClass="card p-4 shadow">
                 <div class="form-group mb-3">
                     <label>Nombres:</label>
-                    <asp:TextBox ID="txtNombres" runat="server" CssClass="form-control" ClientIDMode="Static" Placeholder="Ingrese el nombre del cliente" />
+                    <asp:TextBox ID="txtNombres"  runat="server" CssClass="form-control" ClientIDMode="Static" Placeholder="Ingrese el nombre del cliente" />
                 </div>
                 <div class="form-group mb-3">
                     <label>Apellidos:</label>
-                    <asp:TextBox ID="txtApellidos" runat="server" CssClass="form-control" ClientIDMode="Static" Placeholder="Ingrese el apellido del cliente" />
+                    <asp:TextBox ID="txtApellidos"  runat="server" CssClass="form-control" ClientIDMode="Static" Placeholder="Ingrese el apellido del cliente" />
                 </div>
                 <div class="form-group mb-3">
                     <label>Cédula:</label>
-                    <asp:TextBox ID="txtCedula" runat="server" CssClass="form-control" ClientIDMode="Static" MaxLength="10" Placeholder="Ingrese el número de cédula" />
+                    <asp:TextBox ID="txtCedula"  runat="server" CssClass="form-control" ClientIDMode="Static" MaxLength="10" Placeholder="Ingrese el número de cédula" />
                 </div>
                 <div class="form-group mb-3">
                     <label>Email:</label>
-                    <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" ClientIDMode="Static" TextMode="Email" Placeholder="Ingrese un correo electrónico" />
-                </div>
+                    <asp:TextBox ID="txtEmail"  runat="server" CssClass="form-control" ClientIDMode="Static" TextMode="Email" Placeholder="Ingrese un correo electrónico" />
+                </div> 
                 <div class="form-group mb-3">
                     <label>Teléfono:</label>
                     <asp:TextBox ID="txtTelefono" runat="server" CssClass="form-control" ClientIDMode="Static" MaxLength="10" Placeholder="Ingrese el númnero de teléfono " />
@@ -51,6 +51,7 @@
             </asp:Panel>
         </div>
     </div>
+
 
     <!-- Scripts jQuery y validación -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
